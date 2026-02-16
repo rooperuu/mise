@@ -16,7 +16,7 @@ echo "running b 1" >b/input.txt
 
 # Should first run and then skip
 pushd a
-assert "mise run -q cwd_task" "running a";
+assert "mise run -q cwd_task" "running a"
 assert_empty "mise run -q cwd_task"
 popd
 
